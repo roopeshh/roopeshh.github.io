@@ -1,0 +1,7 @@
+# Netlify hides dot-folders unless told otherwise.
+[build]
+  publish = "."
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Returning to RAYS-T</title>
+<!-- Only needed if your Tesla developer app requires an https:// redirect URI.
+     Passes the authorization code straight on to the app; nothing is stored or logged. -->
+<p>Returning to RAYS-T… <a id="open" href="#">Open RAYS-T</a></p>
+<script>
+  var target = "rayst://oauth/callback" + window.location.search;
+  document.getElementById("open").href = target;
+  window.location.replace(target);
+</script>

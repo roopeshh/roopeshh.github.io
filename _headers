@@ -1,0 +1,4 @@
+# Cloudflare Pages / Netlify: serve the key as plain text and never cache a stale one for long.
+/.well-known/appspecific/com.tesla.3p.public-key.pem
+  Content-Type: application/x-pem-file
+  Cache-Control: public, max-age=300
